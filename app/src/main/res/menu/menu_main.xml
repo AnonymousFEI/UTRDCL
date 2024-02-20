@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/find_file"
+        android:title="FindFile"/>
+    <item android:id="@+id/search_contact"
+        android:title="SearchContact"/>
+    <item android:id="@+id/register"
+        android:title="Register" />
+</menu>
