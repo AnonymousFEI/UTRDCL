@@ -17,9 +17,9 @@
  */
 
 /**
- * 	art_7_1_1.h
+ * 	art_11_0.h
  *
- * @author : Morangeous
+ * @author : morangeous
  *
  */
 #include <string.h>

@@ -52,7 +52,9 @@ extern jboolean __attribute__ ((visibility ("hidden"))) art_setup(JNIEnv* env,
 
 extern void __attribute__ ((visibility ("hidden"))) art_replaceMethod(
 		JNIEnv* env, jobject src, jobject dest) {
-	if (apilevel > 24) {
+	if (apilevel > 30) {
+		replace_11_0(env, src, dest);
+	} else if (apilevel > 24) {
 		LOGD("api level is: %d Enter art_replaceMethod", apilevel);
 //		replace_7_1_1(env, src, dest);
 		install_7_1_1(env, src, dest);
@@ -71,7 +73,9 @@ extern void __attribute__ ((visibility ("hidden"))) art_replaceMethod(
 
 extern void __attribute__ ((visibility ("hidden"))) art_setFieldFlag(
 		JNIEnv* env, jobject field) {
-	if (apilevel > 24) {
+	if (apilevel > 30) {
+		setFiledFlag_11_0(env, field);
+	} else if (apilevel > 24) {
 		setFieldFlag_7_1_1(env, field);
 	} else if (apilevel > 23) {
         setFieldFlag_7_0(env, field);

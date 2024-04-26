@@ -59,5 +59,7 @@ void replace_7_1_1(JNIEnv* env, jobject src, jobject dest);
 void setFieldFlag_7_1_1(JNIEnv* env, jobject field);
 void install_7_1_1(JNIEnv* env, jobject src, jobject dest);
 void uninstall_7_1_1(JNIEnv* env, jobject src, jobject dest);
+void replace_11_0(JNIEnv* env, jobject src, jobject dest);
+void setFieldFlag_11_0(JNIEnv* env, jobject field);
 
 
